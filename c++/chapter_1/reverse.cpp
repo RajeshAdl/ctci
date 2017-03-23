@@ -2,7 +2,6 @@
 #include <string>
 using namespace std;
 
-
 void reverse(string &input){
 	for(int i=0, j=input.size()-1; i<j; i++, j--) {
 		char temp = input[i];
