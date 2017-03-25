@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 
-void rotateMatrix(vector<vector<int>> &arr) {
+void rotateMatrix(vector<vector<int> > &arr) {
 	if(arr.size() == 0 || arr.size() != arr[0].size()) {
 		return;
 	}
@@ -18,7 +18,7 @@ void rotateMatrix(vector<vector<int>> &arr) {
 	}
 }
 
-void print_matrix(const vector<vector<int>> arr) {
+void print_matrix(const vector<vector<int> > arr) {
 	for(int i=0; i<arr.size(); i++) {
 		for(int j=0; j<arr[0].size(); j++) {
 			cout<<arr[i][j]<<" ";
@@ -28,10 +28,10 @@ void print_matrix(const vector<vector<int>> arr) {
 }
 
 int main() {
-	vector<vector<int>> arr(4, vector<int> (4,0));
+	vector<vector<int>> arr(5, vector<int> (5,0));
 	int number = 1;
-	for(int i=0; i<4; i++) {
-		for(int j=0; j<4; j++) {
+	for(int i=0; i<5; i++) {
+		for(int j=0; j<5; j++) {
 			arr[i][j] = number++;
 		}
 	}
