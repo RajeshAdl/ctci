@@ -13,18 +13,10 @@ bool checkIsRotation(string &s1, string &s2) {
 int main() {
 	string s1 = "waterbottle", s2 = "erbottlewat", s3 = "test", s4 = "estr";
 	cout<<"Test case 1: "<<s1<<" , "<<s2<<" : ";
-	if(checkIsRotation(s1, s2)) {
-		cout<<"True";
-	} else {
-		cout<<"False";
-	}
+	checkIsRotation(s1, s2)? cout<<"True": cout<<"False";
 	cout<<endl;
 	cout<<"Test case 2: "<<s3<<" , "<<s4<<" : ";
-	if(checkIsRotation(s3, s4)) {
-		cout<<"True";
-	} else {
-		cout<<"False";
-	}
+	checkIsRotation(s3, s4)? cout<<"True": cout<<"False";
 	cout<<endl;
 	return 0;
 }
