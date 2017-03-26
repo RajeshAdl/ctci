@@ -37,9 +37,10 @@ void removeDupsWithoutBuffer(Node *head) {
 				temp = front;
 				front = back->next;
 				delete(temp);
-			} else { 
-					back = back->next;
-					front = front->next;
+			} 
+			else { 
+				back = back->next;
+				front = front->next;
 			}
 		}
 		head = head->next;
@@ -56,9 +57,10 @@ void removeDupsWithBuffer(Node *head) {
 			temp = runner;
 			head->next = runner->next;
 			delete(temp);
-		} else {
-				numbers.insert(runner->data); 
-				head = head->next;
+		} 
+		else {
+			numbers.insert(runner->data); 
+			head = head->next;
 		}
 	}
 }
