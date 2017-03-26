@@ -24,13 +24,13 @@ void insert(Node *head, int data) {
 }
 
 int main() {
-	Node *obj = new Node(1);
-	insert(obj, 2);
-	insert(obj, 3);
-	insert(obj, 4);
-	insert(obj, 5);
-	insert(obj, 6);
-	insert(obj, 7);
-	printList(obj);
+	Node *list1 = new Node(1);
+	insert(list1, 2);
+	insert(list1, 3);
+	insert(list1, 4);
+	insert(list1, 5);
+	insert(list1, 6);
+	insert(list1, 7);
+	printList(list1);
 	return 0;
 }
