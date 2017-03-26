@@ -3,7 +3,8 @@ using namespace std;
 
 struct Node {
 	int data;
-	Node *next = NULL;
+	Node *next;
+	Node(int data): data(data), next(NULL) {}
 };
 
 void printList(Node *head) {
@@ -11,11 +12,11 @@ void printList(Node *head) {
 		cout<<head->data<<" ";
 		head = head->next;
 	}
+	cout<<endl;
 }
 
 void insert(Node *head, int data) {
-	Node *newNode = new Node();
-	newNode->data = data;
+	Node *newNode = new Node(data);
 	while(head->next) {
 		head = head->next;
 	}
@@ -23,8 +24,7 @@ void insert(Node *head, int data) {
 }
 
 int main() {
-	Node *obj = new Node();
-	obj->data = 1;
+	Node *obj = new Node(1);
 	insert(obj, 2);
 	insert(obj, 3);
 	insert(obj, 4);
