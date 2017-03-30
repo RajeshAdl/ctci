@@ -32,5 +32,6 @@ int main() {
 	vector<int> a {1, 2, 3, 4, 5, 6, 7};
 	Node *head = minimalBST(a, 0, a.size()-1);
 	preOrder(head);
+	cout<<endl;
 	return 0;
 }
